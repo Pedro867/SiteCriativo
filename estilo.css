@@ -1,0 +1,81 @@
+
+.foto {
+  margin: 50px;
+  width: 350px;
+  height: 400px;
+  float: right;
+  border: 5px solid #333;
+  margin-top: auto;
+}
+.obras {
+  width: 300px;
+  height: 400px;
+  margin: 60px;
+  border: 5px solid #333;
+  float: right;
+  margin-top: auto;
+}
+.filmes{
+  width:250px;
+  height: 350px;
+  margin: 60px;
+  border: 5px solid #333;
+  float: right;
+  margin-top: auto;
+}
+p {
+  font-family: montserrat;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 50px;
+}
+.tamanho {
+  font-size: 30px;
+}
+body {
+  background-color: rgba(128, 128, 128, 0.11);
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 35px;
+  color: white;
+  font-family: montserrat;
+}
+header {
+  background-color: #333;
+  padding: 5px;
+  text-align: center;
+}
+:root {
+  --transition-03: all 300ms ease;
+}
+nav ul {
+  list-style-type: none;
+  background-color: #f4f4f4;
+  padding: 2px;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: #333;
+}
+nav ul li a:hover {
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  transition: var(--transition-03);
+}
+li {
+  padding: 200px;
+  font-size: 25px;
+  font-family: montserrat;
+}
+hr {
+  width: 100%
+}
