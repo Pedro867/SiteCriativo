@@ -1,0 +1,119 @@
+
+.foto {
+  margin: 1.5vw;
+  width: 22vw;
+  height: 26vw;
+  float: right;
+  border: 0.75vw solid #333;
+  margin-top: auto;
+}
+.obras {
+  width: 20vw;
+  height: 28vw;
+  margin: 1.5vw;
+  border: 0.75vw solid #333;
+  float: right;
+  margin-top: auto;
+}
+.filmes{
+  width: 20vw;
+  height: 28vw;
+  margin: 1.5vw;
+  border: 0.75vw solid #333;
+  float: right;
+  margin-top: auto;
+}
+p {
+  font-family: montserrat;
+  font-size: 2vw;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 1.5vw;
+}
+.tamanho {
+  font-size: 2.5vw;
+}
+body {
+  background-color: rgba(128, 128, 128, 0.11);
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 3.5vw;
+  color: white;
+  font-family: montserrat;
+}
+header {
+  background-color: #333;
+  padding: 5px;
+  text-align: center;
+}
+.escolhido {
+  background-color: #3e3e3e;
+  color: #fff;
+  padding: 0.75vw;
+  border-radius: 1vw;
+}
+.tela {
+  text-align: center;
+  align-items: center;
+}
+:root {
+  --transition-03: all 300ms ease;
+}
+nav li {
+  display: inline;
+  margin: 8vw;
+}
+nav ul {
+  list-style-type: none;
+  background-color: #f4f4f4;
+  padding: 0.1vw;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 0.75vw;
+  color: #333;
+}
+nav ul li a:hover {
+  background-color: #3e3e3e;
+  color: #fff;
+  border-radius: 1vw;
+  transition: var(--transition-03);
+}
+li {
+  font-size: 2vw;
+  font-family: montserrat;
+}
+@media (max-width: 720px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 6vw;
+  }
+  .tela {
+    justify-content: space-between;
+  }
+  nav ul li {
+    margin: 20px;
+    display: block;
+  }
+  nav li {
+    margin: 20px;
+  }
+  li {
+    font-size: 3vw;
+  }
+  .foto {
+  width: 25vw;
+  height: 37vw;
+  float: right;
+  margin-top: auto;
+  }
+  .escolhido {
+    padding: 7px;
+    border-radius: 5px;
+  }
+}
