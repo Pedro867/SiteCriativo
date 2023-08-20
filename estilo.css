@@ -29,15 +29,21 @@
 .divisao2 {
   height: 15vw;
 }
-p {
+.paragrafo {
+  width: 2.5vw;
+  height: 1.5vw;
+  float: left;
+}
+.texto {
   font-family: montserrat;
   font-size: 2vw;
   text-align: justify;
   line-height: 1.5;
-  margin: 1.5vw;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
 }
 .tamanho {
-  font-size: 2.5vw;
+  font-size: 2.25vw;
 }
 body {
   background-color: rgba(128, 128, 128, 0.11);
@@ -91,7 +97,7 @@ li {
   font-size: 2vw;
   font-family: montserrat;
 }
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -114,7 +120,7 @@ li {
   }
   .foto {
   width: 25vw;
-  height: 37vw;
+  height: 33vw;
   float: right;
   margin-top: auto;
   }
