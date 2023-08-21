@@ -1,6 +1,6 @@
 
 .foto {
-  margin: 1.5vw;
+  margin: 2vw;
   width: 22vw;
   height: 26vw;
   float: right;
@@ -10,7 +10,7 @@
 .obras {
   width: 20vw;
   height: 28vw;
-  margin: 1.5vw;
+  margin: 2vw;
   border: 0.75vw solid #333;
   float: right;
   margin-top: auto;
@@ -18,13 +18,13 @@
 .filmes{
   width: 20vw;
   height: 28vw;
-  margin: 1.5vw;
+  margin: 2vw;
   border: 0.75vw solid #333;
   float: right;
   margin-top: auto;
 }
 .divisao {
-  height: 10vw;
+  height: 12vw;
 }
 .divisao2 {
   height: 15vw;
@@ -57,7 +57,7 @@ h1 {
 }
 header {
   background-color: #333;
-  padding: 5px;
+  padding: 0.1vw;
   text-align: center;
 }
 .escolhido {
@@ -80,7 +80,7 @@ nav li {
 nav ul {
   list-style-type: none;
   background-color: #f4f4f4;
-  padding: 0.1vw;
+  padding: 0.50vw;
 }
 nav ul li a {
   text-decoration: none;
@@ -107,25 +107,35 @@ li {
   }
   .tela {
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
   nav ul li {
-    margin: 20px;
     display: block;
   }
+  nav ul {
+    padding: 0;
+  }
   nav li {
-    margin: 20px;
+    margin: 4vw;
   }
   li {
     font-size: 3vw;
   }
   .foto {
   width: 25vw;
-  height: 33vw;
+  height: 30vw;
   float: right;
   margin-top: auto;
   }
   .escolhido {
-    padding: 7px;
-    border-radius: 5px;
+    padding: 1.75vw;
+    border-radius: 5vw;
+  }
+  nav ul li a:hover {
+    border-radius: 5vw;
+    padding: 1.5vw;
   }
 }
