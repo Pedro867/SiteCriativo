@@ -105,6 +105,9 @@ li {
   h1 {
     font-size: 6vw;
   }
+  .texto {
+    font-size: 4vw;
+  }
   .tela {
     justify-content: space-between;
     text-align: center;
