@@ -108,6 +108,9 @@ li {
   .texto {
     font-size: 4vw;
   }
+  .tamanho {
+    font-size: 4.5vw;
+  }
   .tela {
     justify-content: space-between;
     text-align: center;
@@ -125,13 +128,21 @@ li {
     margin: 4vw;
   }
   li {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .foto {
-  width: 25vw;
-  height: 30vw;
+  width: 30vw;
+  height: 37vw;
   float: right;
   margin-top: auto;
+  }
+  .obras {
+    width: 25vw;
+    height: 35vw;
+  }
+  .filmes {
+    width: 25vw;
+    height: 35vw;
   }
   .escolhido {
     padding: 1.75vw;
