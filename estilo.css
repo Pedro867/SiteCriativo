@@ -97,7 +97,7 @@ li {
   font-size: 2vw;
   font-family: montserrat;
 }
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   header {
     flex-direction: column;
     align-items: center;
