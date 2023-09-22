@@ -241,6 +241,9 @@ li {
   h2 {
     font-size: 3.5vw;
   }
+  .titulo{
+    width: 70vw;
+  }
   #choices{
     display: block;
     width: 100vw;
