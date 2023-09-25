@@ -108,10 +108,10 @@ h2 {
   background-color: lightcoral;
 }
 button{
-  height: 3vw;
-	width: 8vw;
+  height: 5vw;
+	width: 13vw;
   margin-top: 3vw;
-  margin-left: 6vw;
+  margin-left: 3vw;
   margin-bottom: 3vw;
 	background-color: #b6b6b6;
 	border-radius: 0.1vw;
@@ -122,7 +122,7 @@ button{
 }
 #pergunta {
   font-family: montserrat;
-  font-size: 1.5vw;
+  font-size: 1.75vw;
 }
 
 
@@ -240,6 +240,7 @@ li {
   }
   .titulo{
     width: 70vw;
+    margin-left: 15vw;
   }
   #choices{
     display: block;
