@@ -1,0 +1,120 @@
+/*ELEMENTOS DO QUIZ*/
+
+.quiz{
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    border: 0.25vw solid #b6b6b6;
+    padding: 1.75vw;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1vw;
+    flex-direction: row;
+    width: 50vw;
+    height: 8vw;
+    margin: 0 auto;
+}
+#pergunta {
+    font-family: montserrat;
+    font-size: 1.75vw;
+}
+button{
+    height: 5vw;
+    width: 13vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+    background-color: #b6b6b6;
+    border-radius: 0.1vw;
+    font-family: montserrat;
+    font-size: 1.25vw;
+    cursor: pointer;
+    color: black;
+}
+
+/*OPCOES*/
+#choices{
+    display: inline-block;
+    width: 100vw;
+    padding: 0.50vw;
+    margin: 0.50vw 0;
+    border: none;
+    cursor: pointer;
+}
+.correta{
+    background-color: #a0d3a0;
+    cursor: default;
+}
+.errada{
+    /*background-color: lightcoral;*/
+    opacity: 0;
+    cursor: default;
+}
+/*------*/
+
+/*BOTAO PARA ENTRAR NO QUIZ*/
+#bloco{
+    display: flex;
+    margin-left: 43vw;
+    padding: 0.75vw;
+    width: 4vw;
+    background-color: #3e3e3e;
+    border-radius: 1vw;
+}
+#bloco-quiz{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+/*------------------------*/
+
+@media (max-width: 720px) {
+
+    /*botao para ir no quiz cllr*/
+    #bloco{ 
+        width: 9vw;
+    }
+    #bloco-quiz{
+        padding-left: 0.25vw;
+    }
+    
+    /*QUIZ CLLR*/
+    .quiz{
+        background-color: #D3D3D3;
+        border-radius: 10px;
+        border: 0.25vw solid #b6b6b6;
+        padding: 1.75vw;
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 3.5vw;
+    }
+    .titulo{
+        width: 70vw;
+        margin-left: 15vw;
+    }
+    #choices{
+        display: block;
+        width: 100vw;
+        padding: 0.50vw;
+        margin: 0.50vw 0;
+    }
+    button{
+        height: 6vw;
+        width: 14vw;
+        margin-top: 1vw;
+        margin-left: 3.5vw;
+        margin-bottom: 1vw;
+        border-radius: 1vw;
+        font-size: 1.5vw;
+    }
+    #pergunta {
+        font-size: 2vw;
+    }
+    /*--------*/
+}

@@ -1,4 +1,14 @@
+body {
+  background-color: rgba(128, 128, 128, 0.11);
+  padding: 0;
+  margin: 0;
+}
+.tela {
+  text-align: center;
+  align-items: center;
+}
 
+/*ELEMENTOS DAS IMAGENS*/
 .foto {
   margin: 2vw;
   width: 22vw;
@@ -29,6 +39,9 @@
 .divisao2 {
   height: 15vw;
 }
+/*-------------------*/
+
+/*FONTES*/
 .paragrafo {
   width: 2.5vw;
   height: 1.5vw;
@@ -45,88 +58,18 @@
 .tamanho {
   font-size: 2.25vw;
 }
-body {
-  background-color: rgba(128, 128, 128, 0.11);
-  padding: 0;
-  margin: 0;
-}
 h1 {
   font-size: 3.5vw;
   color: white;
   font-family: montserrat;
 }
-#bloco{
-  display: flex;
-  margin-left: 43vw;
-  padding: 0.75vw;
-  width: 4vw;
-  background-color: #3e3e3e;
-  border-radius: 1vw;
-}
-#bloco-quiz{
-  text-decoration: none;
-  color: white;
-  text-align: center;
-}
-
-
-
-.quiz{
-  background-color: #D3D3D3;
-  border-radius: 10px;
-  border: 0.25vw solid #b6b6b6;
-  padding: 1.75vw;
-  max-width: 70%;
-  margin: 0 auto;
-}
 h2 {
   color: #333;
   font-size: 3vw;
 }
-.titulo{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 1vw;
-  flex-direction: row;
-  width: 50vw;
-  height: 8vw;
-  margin: 0 auto;
-}
-#choices{
-  display: block;
-  width: 100vw;
-  padding: 0.50vw;
-  margin: 0.50vw 0;
-  border: none;
-  cursor: pointer;
-}
-.correta{
-  background-color: #a0d3a0;
-}
-.errada{
-  background-color: lightcoral;
-}
-button{
-  height: 5vw;
-	width: 13vw;
-  margin-top: 3vw;
-  margin-left: 3vw;
-  margin-bottom: 3vw;
-	background-color: #b6b6b6;
-	border-radius: 0.1vw;
-  font-family: montserrat;
-  font-size: 1.25vw;
-	cursor: pointer;
-	color: black;
-}
-#pergunta {
-  font-family: montserrat;
-  font-size: 1.75vw;
-}
+/*-----*/
 
-
-
+/*CABECALHO*/
 header {
   background-color: #333;
   padding: 0.1vw;
@@ -135,44 +78,64 @@ header {
   background-color: #3e3e3e;
   color: #fff;
   padding: 0.75vw;
-  border-radius: 1vw;
+  border-radius: 1.5vw;
 }
-.tela {
-  text-align: center;
-  align-items: center;
-}
-:root {
-  --transition-03: all 300ms ease;
-}
-nav li {
-  display: inline;
-  margin: 8vw;
-}
-nav ul {
-  list-style-type: none;
-  background-color: #f4f4f4;
-  padding: 0.50vw;
+nav ul li a:hover {
+  background-color: #3e3e3e;
+  color: #fff;
+  border-radius: 1.5vw;
+  transition: var(--transition-03);
 }
 nav ul li a {
   text-decoration: none;
   padding: 0.75vw;
   color: #333;
 }
-nav ul li a:hover {
-  background-color: #3e3e3e;
-  color: #fff;
-  border-radius: 1vw;
-  transition: var(--transition-03);
+:root {
+  --transition-03: all 300ms ease;
+}
+nav ul {
+  list-style-type: none;
+  background-color: #f4f4f4;
+  padding: 0.50vw;
+}
+nav li {
+  display: inline;
+  margin: 8vw;
 }
 li {
   font-size: 2vw;
   font-family: montserrat;
 }
+/*----------*/
+
 @media (max-width: 720px) {
-  header {
-    flex-direction: column;
+  .tela {
+    justify-content: space-between;
+    text-align: center;
     align-items: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
+
+  /*IMAGENS CLLR*/
+  .foto {
+    width: 30vw;
+    height: 37vw;
+    float: right;
+    margin-top: auto;
+  }
+  .obras {
+    width: 25vw;
+    height: 35vw;
+  }
+  .filmes {
+    width: 25vw;
+    height: 35vw;
+  }
+  /*------------*/
+
+  /*FONTES CLLR*/
   h1 {
     font-size: 6vw;
   }
@@ -182,12 +145,23 @@ li {
   .tamanho {
     font-size: 4.5vw;
   }
-  .tela {
-    justify-content: space-between;
-    text-align: center;
+  /*-----------*/
+
+  /*CABECALHO CLLR*/  
+  header {
+    flex-direction: column;
     align-items: center;
-    margin-left: 15vw;
-    margin-right: 15vw;
+  }
+  .escolhido {
+    padding: 1.75vw;
+    border-radius: 3vw;
+  }
+  nav ul li a:hover {
+    border-radius: 3vw;
+    padding: 1.5vw;
+  }
+  :root {
+    --transition-03: all 700ms ease;
   }
   nav ul li {
     display: block;
@@ -201,63 +175,5 @@ li {
   li {
     font-size: 4vw;
   }
-  .foto {
-  width: 30vw;
-  height: 37vw;
-  float: right;
-  margin-top: auto;
-  }
-  .obras {
-    width: 25vw;
-    height: 35vw;
-  }
-  .filmes {
-    width: 25vw;
-    height: 35vw;
-  }
-  .escolhido {
-    padding: 1.75vw;
-    border-radius: 5vw;
-  }
-  nav ul li a:hover {
-    border-radius: 5vw;
-    padding: 1.5vw;
-  }
-
-  #bloco{
-    width: 8vw;
-  }
-  .quiz{
-    background-color: #D3D3D3;
-    border-radius: 10px;
-    border: 0.25vw solid #b6b6b6;
-    padding: 1.75vw;
-    max-width: 85%;
-    margin: 0 auto;
-  }
-  h2 {
-    font-size: 3.5vw;
-  }
-  .titulo{
-    width: 70vw;
-    margin-left: 15vw;
-  }
-  #choices{
-    display: block;
-    width: 100vw;
-    padding: 0.50vw;
-    margin: 0.50vw 0;
-  }
-  button{
-    height: 6vw;
-    width: 14vw;
-    margin-top: 1vw;
-    margin-left: 3.5vw;
-    margin-bottom: 1vw;
-    border-radius: 1vw;
-    font-size: 1.5vw;
-  }
-  #pergunta {
-    font-size: 2vw;
-  }
+  /*----------*/
 }

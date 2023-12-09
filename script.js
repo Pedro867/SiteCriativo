@@ -1,10 +1,9 @@
 const options = document.querySelectorAll('.opção');
 
-let currentQuestion = 0;
-
 options.forEach(opção => {
     opção.addEventListener('click', function() {
         const isCorrect = this.getAttribute('data-correct') === 'true';
+        var other = document.getElementsByClassName('errada');
 
         if (isCorrect) {
             this.classList.add('correta');
