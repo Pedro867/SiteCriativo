@@ -58,8 +58,8 @@ button{
 
 /*BOTAO PARA ENTRAR NO QUIZ*/
 #bloco{
-    display: flex;
-    margin-left: 43vw;
+    display: inline;
+    margin-left: 1.25vw;
     padding: 0.75vw;
     width: 4vw;
     background-color: #3e3e3e;
