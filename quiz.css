@@ -1,27 +1,143 @@
+* {
+    font-family: montserrat;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+
 /*ELEMENTOS DO QUIZ*/
 
-.quiz{
-    background-color: #D3D3D3;
-    border-radius: 10px;
-    border: 0.25vw solid #b6b6b6;
-    padding: 1.75vw;
-    max-width: 70%;
-    margin: 0 auto;
-}
 .titulo{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 1vw;
     flex-direction: row;
     width: 50vw;
     height: 8vw;
     margin: 0 auto;
+    font-size: 3vw;
 }
-#pergunta {
-    font-family: montserrat;
-    font-size: 1.75vw;
+
+main {
+    background-color: #D3D3D3;
+    border-radius: 0.75vw;
+    border: 0.25vw solid #b6b6b6;
+    padding: 1.75vw;
+    max-width: 70%;
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
+
+.questionNumber {
+    text-align: center;
+    width: 5vw;
+    height: 3vw;
+    margin-left: 57vw;
+    margin-top: 1vw;
+    font-size: 2.5vw;
+    color: solid black;
+    border-radius: 10vw;
+    border: 0.3vw solid black;
+    padding: 0.5vw;
+    background-color: #b6b6b6;
+    font-weight: bold;
+}
+
+.content {
+    display: none;
+    flex-direction: column;
+    width: 70%;
+}
+
+.question {
+    display: flex;
+    text-align: center;
+    margin-left: 7vw;
+    margin-bottom: 4vw;
+    font-size: 2.5vw;
+    width: 100%;
+}
+
+.options{
+    display: inline;
+    border: none;
+    cursor: pointer;
+}
+
+.options button {
+    border: 0.4vw solid black;
+    border-radius: 0.5vw;
+    margin-left: 5vw;
+    margin-bottom: 3vw;
+    font-size: 2vw;
+    width: 53vw;
+    height: 6vw;
+}
+
+.finish {
+    margin-top: 2vw;
+    font-size: 3vw;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.finish button{
+    border: 0.4vw solid black;
+    border-radius: 0.75vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5vw;
+    width: 15vw;
+    height: 6vw;
+}
+
+.start {
+    display: flex;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start button {
+    font-size: 2.5vw;
+    border-radius: 10vw;
+    width: 20vw;
+    height: 5vw;
+    margin: 0 auto;
+}
+
+.resposta {
+    display: none;
+    text-align: justify;
+    margin-bottom: 3vw;
+    margin-top: 2vw;
+    font-size: 2.25vw;
+}
+
+.respBtn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vw;
+}
+
+button:hover {
+    background-color: #D3D3D3;
+}
+
 button{
     height: 5vw;
     width: 13vw;
@@ -30,30 +146,12 @@ button{
     margin-bottom: 3vw;
     background-color: #b6b6b6;
     border-radius: 0.1vw;
-    font-family: montserrat;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     cursor: pointer;
     color: black;
+    text-align: center;
 }
 
-/*OPCOES*/
-#choices{
-    display: inline-block;
-    width: 100vw;
-    padding: 0.50vw;
-    margin: 0.50vw 0;
-    border: none;
-    cursor: pointer;
-}
-.correta{
-    background-color: #a0d3a0;
-    cursor: default;
-}
-.errada{
-    /*background-color: lightcoral;*/
-    opacity: 0;
-    cursor: default;
-}
 /*------*/
 
 /*BOTAO PARA ENTRAR NO QUIZ*/
@@ -78,32 +176,51 @@ button{
     #bloco{ 
         width: 9vw;
     }
+
     #bloco-quiz{
         padding-left: 0.25vw;
     }
     
     /*QUIZ CLLR*/
-    .quiz{
+    main{
         background-color: #D3D3D3;
         border-radius: 10px;
         border: 0.25vw solid #b6b6b6;
         padding: 1.75vw;
         max-width: 85%;
         margin: 0 auto;
+        margin-bottom: 20vw;
     }
+
     h2 {
         font-size: 3.5vw;
     }
+
     .titulo{
         width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    .start {
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+    }
+
+    .questionNumber {
+        margin-left: 70vw;
+        margin-bottom: 3vw;
+    }
+
+    .question {
         margin-left: 15vw;
+        justify-content: center;
+        width: 52vw;
     }
-    #choices{
-        display: block;
-        width: 100vw;
-        padding: 0.50vw;
-        margin: 0.50vw 0;
+
+    .options {
+        margin-left: 9vw;
     }
+    
     button{
         height: 6vw;
         width: 14vw;
@@ -113,8 +230,9 @@ button{
         border-radius: 1vw;
         font-size: 1.5vw;
     }
-    #pergunta {
-        font-size: 2vw;
+    
+    .finish button {
+        margin-top: 5vw;
     }
     /*--------*/
 }
